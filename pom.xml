@@ -13,10 +13,19 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>heat-map-api</name>
 	<description>Heat Map API</description>
+
 	<properties>
 		<java.version>11</java.version>
 		<testcontainers.version>1.15.3</testcontainers.version>
 	</properties>
+
+	<developers>
+		<developer>
+			<name>Deyve Machado</name>
+			<email>dvmachado@id.uff.br</email>
+		</developer>
+	</developers>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -34,10 +43,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
+
+		<!--<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
