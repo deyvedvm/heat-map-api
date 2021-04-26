@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    url: HEROKU_POSTGRESQL_URL
+    username: HEROKU_POSTGRESQL_USERNAME
+    password: HEROKU_POSTGRESQL_PASSWORD
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
