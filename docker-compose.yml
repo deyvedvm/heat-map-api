@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  postgres:
+    image: postgres
+    container_name: heat-map-postgre-database
+    #    restart: always
+    environment:
+      POSTGRES_DB: heat-map-database
+      POSTGRES_USER: heat-map-user
+      POSTGRES_PASSWORD: heat-map-password
+    ports:
+      - 5432:5432
