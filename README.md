@@ -1,3 +1,7 @@
+## Deployed on Heroku using Github Actions 
+
+https://heat-map-spring-api.herokuapp.com/residences
+
 ## Running locally
 
 - Install:
