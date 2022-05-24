@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 import static dev.deyve.heatmapapi.parsers.ResidenceParser.toResidence;
 import static dev.deyve.heatmapapi.parsers.ResidenceParser.toResidenceDTO;
+import static java.util.stream.Collectors.toList;
 
 @Log4j2
 @RestController
@@ -34,7 +35,7 @@ public class ResidenceController {
 
         List<ResidenceDTO> residenceDTOS = residences.stream()
                 .map(ResidenceParser::toResidenceDTO)
-                .collect(Collectors.toList());
+                .collect(toList());
 
         log.info("Residence DTO List: {} ", residenceDTOS);
 
